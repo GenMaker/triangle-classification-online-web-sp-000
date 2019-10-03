@@ -11,7 +11,6 @@ class Triangle
   end
 
   def kind
-binding.pry
     if @side_a != 0 && @side_a == @side_b && @side_a == @side_c && @side_b == @side_c && @side_a != 0
       :equilateral
     elsif
