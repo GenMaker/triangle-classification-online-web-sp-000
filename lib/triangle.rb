@@ -4,7 +4,6 @@ class Triangle
   attr_accessor :side_a, :side_b, :side_c
 
   def initialize (side_a, side_b, side_c)
-
     @side_a = side_a
     @side_b = side_b
     @side_c = side_c
@@ -14,7 +13,6 @@ class Triangle
     sum_1 = @side_a + @side_b
     sum_2 = @side_b + @side_c
     sum_3 = @side_a + @side_c
-
     if
       @side_a == 0 && @side_b == 0 && @side_c == 0
       raise TriangleError
@@ -22,13 +20,13 @@ class Triangle
       @side_a < 0 || @side_b < 0 || @side_c < 0
       raise TriangleError
     elsif
-      sum_1 <= @side_c || sum_2 <= @side_a || sum_3 <= @side_b  
+      sum_1 <= @side_c || sum_2 <= @side_a || sum_3 <= @side_b
       raise TriangleError
     end
   end
 
   def kind
-    if valid?
+    if 
       @side_a == @side_b && @side_a == @side_c && @side_b == @side_c && @side_a != 0
       :equilateral
     elsif
