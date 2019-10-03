@@ -24,6 +24,7 @@ class Triangle
     elsif
       sum_1 < @side_c || sum_2 < @side_a || sum_3 < @side_b
       raise TriangleError
+    end
   end
 
   def kind
