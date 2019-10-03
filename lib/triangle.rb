@@ -9,7 +9,7 @@ class Triangle
     @side_c = side_c
   end
 
-  def valid
+  def valid?
     sum_1 = @side_a + @side_b
     sum_2 = @side_b + @side_c
     sum_3 = @side_a + @side_c
@@ -26,7 +26,8 @@ class Triangle
   end
 
   def kind
-    if @side_a == @side_b && @side_a == @side_c && @side_b == @side_c && @side_a != 0
+    if valid?
+      @side_a == @side_b && @side_a == @side_c && @side_b == @side_c && @side_a != 0
       :equilateral
     elsif
       @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
