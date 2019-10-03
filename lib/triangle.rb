@@ -26,8 +26,8 @@ class Triangle
   end
 
   def kind
-    if vali
-      @side_a == @side_b && @side_a == @side_c && @side_b == @side_c 
+    if valid
+      @side_a == @side_b && @side_a == @side_c && @side_b == @side_c
       :equilateral
     elsif
       @side_a == @side_b || @side_b == @side_c || @side_a == @side_c
