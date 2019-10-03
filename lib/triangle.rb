@@ -9,7 +9,7 @@ class Triangle
     @side_c = side_c
   end
 
-  def valid?
+  def valid
     sum_1 = @side_a + @side_b
     sum_2 = @side_b + @side_c
     sum_3 = @side_a + @side_c
