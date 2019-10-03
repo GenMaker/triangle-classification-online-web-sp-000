@@ -26,7 +26,7 @@ class Triangle
   end
 
   def kind
-    if valid
+    if valid?
       @side_a == @side_b && @side_a == @side_c && @side_b == @side_c
       :equilateral
     elsif
