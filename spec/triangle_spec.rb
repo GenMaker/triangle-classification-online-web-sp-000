@@ -42,7 +42,6 @@ describe 'Triangle' do
   end
 
   it 'knows that triangles with no size are illegal' do
-    binding.pry
     expect{Triangle.new(0, 0, 0).kind}.to raise_error(Triangle::TriangleError)
   end
 
